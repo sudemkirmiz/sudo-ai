@@ -1,14 +1,14 @@
 # Sudo AI — Premium Google Workspace Agent
-
-<div align="center">
-  <img src="frontend/public/screenshot.png" alt="Sudo AI Premium Dashboard" width="800"/>
-</div>
-
 <p align="center">
   <img src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite%20%2B%20Tailwind-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/AI-Gemini%20%7C%20Ollama-8A2BE2?style=flat-square" alt="LLMs" />
 </p>
+
+<div align="center">
+  <img src="frontend/public/screenshot.png" alt="Sudo AI Premium Dashboard" width="800"/>
+</div>
+
 
 **Sudo AI**, günlük **Google Workspace** işlerinizi (Gmail, Takvim, Drive, Docs, Sheets, Slides) doğal dille yönetmenizi sağlayan yüksek yetenekli, *ReAct (Reasoning and Acting)* mantığıyla çalışan premium bir yapay zeka asistanıdır. Google'ın bulut yapay zeka servisleri ile sistem araçlarını entegre ederek tamamen size özel, otonom bir "SaaS" (Hizmet olarak Yazılım) deneyimi sunar.
 
@@ -141,3 +141,12 @@ sudo-ai/
 **📍 Güvenlik İpuçları:** 
 - `credentials.json`, `token.json` veya `.env` dosyalarını hiçbir public platformda (GitHub vb.) paylaşmayınız. Bu proje altyapısı gereği tüm `.gitignore` ayarlarına sahiptir ancak bireysel önlem esastır.
 - Bu proje, sohbet günlüğünü kaydetmek için varsayılan olarak `sudo_ai.db` isimli yerel bir **SQLite** veritabanı kullanır ve hiçbir veriyi 3. parti sunuculara (LLM modellerini işleyen Google/Ollama hariç) göndermez.
+
+## 📧 İletişim
+
+**Geliştirici:** Sudem Kırmız
+
+**Takım:** YZT | MEVZUU
+
+**GitHub:** [https://github.com/sudemkirmiz](https://github.com/sudemkirmiz)
+
