@@ -1,0 +1,12 @@
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+google-generativeai
+python-dotenv
+ollama
+fastapi
+pydantic
+uvicorn[standard]
+sqlalchemy
+PyPDF2
+python-multipart
