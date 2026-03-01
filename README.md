@@ -4,107 +4,140 @@
   <img src="frontend/public/screenshot.png" alt="Sudo AI Premium Dashboard" width="800"/>
 </div>
 
-![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite%20%2B%20Tailwind-61DAFB?logo=react&logoColor=black)
-![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi&logoColor=white)
-![LLM](https://img.shields.io/badge/AI-Gemini%20%7C%20Ollama-8A2BE2)
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-React%20%2B%20Vite%20%2B%20Tailwind-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/AI-Gemini%20%7C%20Ollama-8A2BE2?style=flat-square" alt="LLMs" />
+</p>
 
-**Sudo AI**, günlük Google Workspace işlerinizi (Gmail, Takvim, Drive, Docs, Sheets, Slides) doğal dille otomatize etmenizi sağlayan yüksek yetenekli, *ReAct (Reasoning and Acting)* mantığıyla çalışan premium bir yapay zeka asistanıdır.
-
-Eski Streamlit altyapısından, çok daha hızlı ve pürüzsüz bir kullanıcı deneyimi sunan **Client-Server (React + FastAPI)** mimarisine geçirilmiştir.
-
-## ✨ Öne Çıkan "SaaS" Özellikleri
-
-- 🎨 **Premium Modern Arayüz:** Apple/SaaS standartlarında pastel renk paleti, gelişmiş animasyonlar, pürüzsüz geçişler ve şık kavislerle tasarlanmış React tabanlı arayüz.
-- ⚙️ **Dinamik Model Seçimi:** Arayüz üzerinden Google Gemini (Bulut) veya Ollama (Yerel) modelleri (Llama 3 vb.) arasında anında geçiş yapabilme.
-- 🎙️ **Text-to-Speech (TTS):** Asistan mesajları için doğal Türkçe kadın sesi ile seslendirme özelliği. (URL ve Markdown bağlamları temizlenerek okunur).
-- 📎 **RAG (Retrieval-Augmented Generation):** Chat üzerinden PDF veya TXT dosyası yükleyebilme, sürükle-bırak desteği ve belge içeriğine dayalı spesifik sohbet edebilme becerisi.
-- 📆 **Akıllı Organizatör Butonları:** "Docs'a Aktar" ve "Takvime İşle" gibi tek tıkla mesaj içeriklerini sistem araçlarına (`Tool Calling`) aktaran aksiyon tuşları.
-- ⏱️ **Canlı Geri Bildirim:** Kod blokları için "Kopyalandı!" panosu, "Düşünüyor..." zıplayan üç nokta animasyonu, Asistan adım adım araç çalıştırırken beliren *Pill Badge* geri bildirimleri.
-- 🗄️ **Veritabanı Entegrasyonu:** SQLite tabanlı, sonsuz log tutabilen ve istediğinizde tek tıkla silinebilen sohbet geçmişi sistemi.
+**Sudo AI**, günlük **Google Workspace** işlerinizi (Gmail, Takvim, Drive, Docs, Sheets, Slides) doğal dille yönetmenizi sağlayan yüksek yetenekli, *ReAct (Reasoning and Acting)* mantığıyla çalışan premium bir yapay zeka asistanıdır. Google'ın bulut yapay zeka servisleri ile sistem araçlarını entegre ederek tamamen size özel, otonom bir "SaaS" (Hizmet olarak Yazılım) deneyimi sunar.
 
 ---
 
-## ☁️ Google Workspace Yetenekleri (Araçlar)
+## ✨ Öne Çıkan Özellikler
 
-Sudo AI sadece metin üretmez, sizin adınıza *gerçek işler* yapar:
-
-- **Gmail:** İstediğiniz kişi ve içerikle taslak e-postalar hazırlar.
-- **Takvim:** Gündeminizi okur, yeni etkinlik veya toplantılar planlar.
-- **Drive:** Son dosyalarınızı listeler veya istediğiniz belgenin indirme linkini getirir.
-- **Docs:** Kayıtlı Google Docs belgelerinizi doğrudan okur ve içeriğini yorumlar. Veya yeni doküman yaratarak kaydeder.
-- **Sheets:** E-Tabloların (Excel) sonuna anında yeni satırlar/veriler ekler.
-- **Slides:** Sıfırdan boş bir sunum dosyası oluşturur.
+- 🎨 **Premium UI/UX:** Apple/SaaS standartlarında pastel renk paleti, pürüzsüz "düşünüyor" (typing) animasyonları ve şık baloncuk tasarımlarına sahip modern React arayüzü.
+- ⚙️ **Çoklu Model Desteği:** Google Gemini (Bulut) veya sisteminizde çalışan yerel modeller (Ollama) arasında anında geçiş imkanı.
+- 🎙️ **Text-to-Speech (Seslendirme):** Doğal Türkçe kadın sesleriyle asistan yanıtlarını dinleme özelliği (URL'ler ve kod blokları akıllıca filtrelenerek okunur).
+- 📎 **RAG (Belge ile Sohbet):** Sürükle-bırak desteğiyle PDF ve TXT yükleme, döküman sentezleri üzerinden spesifik belgelerle sohbet edebilme becerisi.
+- 📆 **Tek Tık Aksiyonları:** "Docs'a Aktar" ve "Takvime İşle" butonlarıyla sohbet içeriklerini saniyeler içinde Google servislerine otomatik yazdırma.
+- 🔒 **Tam Kontrol ve Güvenlik:** Sudo AI, e-posta göndermeden veya etkinlik oluşturmadan önce *Local OAuth* (Yerel yetkilendirme) kullanır. Verileriniz (sohbet geçmişiniz dâhil) tamamen sizin makinenizde işlenir ve saklanır.
 
 ---
 
-## 🛠️ Kurulum Rehberi
+## ☁️ Desteklenen Google Araçları
 
-Projeyi yerel ortamınızda ayağa kaldırmak için aşağıdaki adımları sırayla (Backend ve Frontend olarak) izleyin.
+Sudo AI sadece metin üretmez, doğrudan hesaplarınızda *gerçek işler* yapar:
+- **📩 Gmail:** Yeni taslak e-postalar hazırlar.
+- **📅 Takvim:** Gündeminizi sorgular, yepyeni toplantılar planlar.
+- **📂 Drive:** Son yüklenen dosyalarınızı listeler ve doğrudan indirme bağlantılarını getirir.
+- **📝 Docs:** Kayıtlı dökümanlarınızı okuyup analiz eder veya sıfırdan döküman yaratır.
+- **📊 Sheets:** E-Tabloların (Excel) son satırına yeni veri setleri veya analizler ekler.
+- **🖥️ Slides:** Hazırlık için boş bir sunum dosyası yaratır.
 
-### 1. Kimlik ve API Ayarları
-Uygulama dizininin en üstünde (root) bir `.env` dosyası oluşturun ve Gemini anahtarınızı ekleyin:
+---
+
+## 🚀 Adım Adım Kurulum Rehberi
+
+Projeyi kendi bilgisayarınızda (localhost) çalıştırmak ve kullanmak için lütfen aşağıdaki adımları sırayla izleyin.
+
+### 📋 Ön Gereksinimler
+Sisteminizi kurmadan önce bilgisayarınızda şunların kurulu olduğundan emin olun:
+- **Python 3.8 veya üzeri**
+- **Node.js (v18+)** ve npm (React arayüzü için)
+- Bir **Google Cloud Platform (GCP)** hesabı
+
+### 1️⃣ Google Cloud API (OAuth) Kurulumu
+Google hesaplarınızda işlem yapabilmek için uygulamaya bir yetkilendirme (kimlik) dosyası tanımlamamız gerekiyor:
+1. [Google Cloud Console](https://console.cloud.google.com/)'a gidin ve yeni bir proje oluşturun.
+2. Gezinme menüsünden **API'ler ve Hizmetler (APIs & Services) > Kitaplık (Library)** sekmesine girin.
+3. Şu API'leri aratıp aktifleştirin: `Gmail API`, `Google Drive API`, `Google Calendar API`, `Google Docs API`, `Google Sheets API`, `Google Slides API`.
+4. **OAuth Onay Ekranı (OAuth Consent Screen)**'nı yapılandırın ("Harici / External" tipi önerilir, Test kullanıcısı olarak kendi e-postanızı ekleyin).
+5. **Kimlik Bilgileri (Credentials) > Kimlik Bilgisi Oluştur (Create Credentials)** sayfasından **"OAuth 2.0 İstemci Kimlikleri (Desktop App / Masaüstü Uygulaması)"** seçeneğiyle bir anahtar oluşturun.
+6. Oluşan `.json` dosyasını indirin. Dosyanın adını tam olarak `credentials.json` yaparak bu projenin ana (root) klasörünün içine bırakın.
+
+### 2️⃣ Ortam Değişkenleri (.env)
+Proje ana dizininde (root) `.env` isminde gizli bir dosya oluşturun ve Google Gemini API anahtarınızı tanımlayın:
 ```env
-GEMINI_API_KEY=sizin_gemini_api_anahtariniz
+GEMINI_API_KEY=sizin_gemini_api_anahtariniz_buraya
+# OLLAMA_HOST=http://localhost:11434 (Eğer Ollama kullanacaksanız ve farklı bir porttaysa aktif edin)
 ```
-*Not:* Google servisleriyle iletişim için **Google Cloud API** üzerinden Desktop App kimliği oluşturarak indirdiğiniz JSON dosyasını `credentials.json` adıyla root dizinine koymayı unutmayın.
 
-### 2. Backend (FastAPI) Kurulumu
-
-Python sanal ortamı kurarak gerekli bağımlılıkları indirin:
+### 3️⃣ Backend (FastAPI Sunucusunu) Başlatma
+Terminalinizi proje ana klasöründe açın ve sırasıyla şunları çalıştırın:
 ```bash
+# Sanal ortam (virtual environment) oluşturma
 python -m venv venv
-venv\Scripts\activate   # Windows
-# source venv/bin/activate # macOS / Linux
 
+# Windows için sanal ortamı etkinleştirme:
+venv\Scripts\activate
+# (macOS/Linux için: source venv/bin/activate)
+
+# Gerekli Python bağımlılıklarını kurma
 pip install -r requirements.txt
-```
 
-Arka yüz sunucusunu başlatın:
-```bash
+# FastAPI sunucusunu başlatma
 python -m uvicorn main:app --reload --port 8000
 ```
-> Sunucu başarıyla çalıştığında API dokümantasyonuna [http://localhost:8000/docs](http://localhost:8000/docs) adresinden erişülebilir. Sistem otomatik olarak SQLite veritabanını (`database.db`) yaratacaktır.
+> **Not:** İlk çalıştırma (veya ilk promptunuzu yazdığınız) esnada tarayıcınızda bir **Google Hesabınıza giriş yapın** ekranı açılacaktır. İzinleri onayladıktan sonra `token.json` dosyası otomatik oluşturulup arka planda Google Workspace yetkilendirmesi tamamlanacaktır.
 
-### 3. Frontend (React) Kurulumu
-
-Yeni bir terminal açın ve `/frontend` dizinine girin:
+### 4️⃣ Frontend (React Arayüzünü) Başlatma
+Backend çalışırken onu kapatmadan **yeni (ikinci)** bir terminal veya CMD sekmesi açın ve `frontend` klasörüne girin:
 ```bash
 cd frontend
-npm install
-```
 
-Sunucuyu ve React arayüzünü geliştirme modunda başlatın:
-```bash
+# React için gereken Node modüllerini (Tailwind, Lucide vb.) yükleme
+npm install
+
+# Geliştirme (Development) sunucusunu başlatma
 npm run dev
 ```
-> Uygulama genellikle [http://localhost:5173/](http://localhost:5173/) üzerinde yayına girer. Tarayıcınızdan bu adresi açarak kullanmaya başlayabilirsiniz.
+Uygulamanız başarıyla **`http://localhost:5173/`** adresinde ayağa kalkacaktır! Tarayıcıdan bu linki açarak asistanla sohbete başlayabilirsiniz. 🎉
 
 ---
 
-## 📂 Proje Mimarisi (Directory Structure)
+## 📂 Proje Klasör Yapısı (Architecture)
+
+Projeyi geliştirmek veya kodları incelemek isteyenler için dizin ağacı:
 
 ```text
 sudo-ai/
-├── ⚙️ Backend (FastAPI)
-│   ├── main.py              # API Endpoint'leri, SSE streaming ve ana asistan döngüsü
-│   ├── database.py          # SQLAlchemy şemaları, SQLite entegrasyonu (CRUD)
-│   ├── tools.py             # ReAct promptu ve Google Workspace fonksiyonları (Tool Calling)
-│   ├── auth.py              # Google OAuth 2.0 ve Token yenileme işlemleri
-│   ├── requirements.txt     # Python paket bağımlılıkları
-│   └── .env                 # API anahtarları (Gizli)
+├── ⚙️ Backend (Python / FastAPI)
+│   ├── main.py              # Rest API'ler, RAG (Yükleme) fonksiyonları ve asistan stream döngüsü
+│   ├── database.py          # SQLAlchemy şemaları (Conversations, Messages) ve SQLite entegrasyonu
+│   ├── tools.py             # LLM ReAct sistem komutları (Prompt) ve asıl Google Workspace fonksiyonları
+│   ├── auth.py              # Google OAuth 2.0 flow ve Token yönetimi (credentials.json okuma)
+│   └── requirements.txt     # Backend paket gereksinimleri (pydantic, fastapi, sqlalchemy vb.)
 │
-├── 🎨 Frontend (React + Vite)
-│   ├── index.html           # React root dosyası
-│   ├── package.json         # Node bağımlılıkları (Tailwind, Lucide vb.)
-│   ├── vite.config.js       # Vite yapılandırma ayarları
+├── 🎨 Frontend (React / Vite)
+│   ├── vite.config.js       # Vite sunucu yapılandırması
+│   ├── package.json         # Node bağımlılıkları ve Script'ler
 │   └── src/
-│       ├── App.jsx          # Uygulama iskeleti, state yönetimi (React)
-│       ├── index.css        # Tailwind direktifleri, animasyonlar ve global değişkenler
-│       ├── services/
-│       │   └── api.js       # Backend API proxy ve HTTP fetch fonksiyonları
+│       ├── App.jsx          # Ana layout, asistan durum (State) yönetimi
+│       ├── index.css        # Tailwind direktifleri ve asistan düşünme (typing) animasyonları
+│       ├── services/api.js  # FastAPI backend'i ile haberleşen proxy servisleri
 │       └── components/
-│           ├── ChatArea.jsx # Mesajlaşma alanı, TTS kancası ve Markdown render bileşeni
-│           ├── ChatInput.jsx# Mesaj kutusu, Sesli Asistan (STT) ve dosya yükleme (RAG)
-│           ├── Sidebar.jsx  # Chat geçmişi listeleme ve ayarlar butonu
-│           └── Welcome.jsx  # Dinamik Onboarding (İsim alma) ve karşılama ekranı
+│           ├── ChatArea.jsx # Sohbet penceresi modeli, Bouncing Dots (Düşünüyor) efekti, TTS modülleri
+│           ├── ChatInput.jsx# Alt metin giriş kutusu, sürükle-bırak (Drag&Drop) ile RAG modülü
+│           ├── Sidebar.jsx  # Sol yönlendirme ve geçmiş sohbetlerin listelenmesi
+│           └── Welcome.jsx  # Sohbet yoksa açılan dinamik Onboarding ve Karşılama Ekranı
 ```
+
+---
+
+## 💡 Nasıl Kullanılır (Kullanım Senaryoları)
+
+- **Karşılama Ekranı:** İsminizi girerek (veya doğrudan) asistanı başlatın. İsim cihazınızın LocalStorage verisinde tutulur.
+- **Doğrudan Emirler Verin:**  
+  *"Önümüzdeki hafta perşembe saat 14:00'te 'Proje Sunumu' adında bir etkinlik oluştur"* dediğiniz an asistan bunu saniyeler içinde Google Takviminize ekleyecektir.
+- **Rapor Yazdırın:**  
+  PDF raporunuzu 'Ataç 📎' ikonuyla chate yükleyin, ardından *"Bu rapordaki temel risk faktörlerini bana liste yap, ardından bunu yeni bir mesajla Google Docs dökümanı olarak kaydet"* komutunu verin.
+- **Akıllı Düzenleyiciler:**  
+  Asistan içeriği üretir üretmez baloncuğun altındaki "📄 Docs'a Aktar" veya "📅 Takvime İşle" butonuna tek bir defa tıklarsanız arka planda gizli promptlar (ReAct) üzerinden bu bilgileri otomatik kaydeder.
+- **Uygulama Ayarları (⚙️):**  
+  Sol alttaki "Ayarlar" butonundan sistem API durumunu veya varsayılan Büyük Dil Modellerini (Gemini, Ollama vb.) görüntüleyebilir/seçebilirsiniz.
+
+---
+**📍 Güvenlik İpuçları:** 
+- `credentials.json`, `token.json` veya `.env` dosyalarını hiçbir public platformda (GitHub vb.) paylaşmayınız. Bu proje altyapısı gereği tüm `.gitignore` ayarlarına sahiptir ancak bireysel önlem esastır.
+- Bu proje, sohbet günlüğünü kaydetmek için varsayılan olarak `sudo_ai.db` isimli yerel bir **SQLite** veritabanı kullanır ve hiçbir veriyi 3. parti sunuculara (LLM modellerini işleyen Google/Ollama hariç) göndermez.
