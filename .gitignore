@@ -70,3 +70,12 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Google API Credentials 
+credentials.json
+token.json
+client_secret_*.json
+
+# Startup Scripts
+SudoAI_Baslat.bat.txt
+*.bat
