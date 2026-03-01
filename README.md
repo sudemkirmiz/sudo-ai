@@ -1,4 +1,4 @@
-# Sudo AI — Premium Google Workspace Agent
+# Sudo AI — Google Workspace Agent
 <p align="center">
   <img src="https://img.shields.io/badge/React_%2B_Vite_%2B_Tailwind-5CE1E6?style=flat-square&logo=react&logoColor=black&label=Frontend&labelColor=444444" alt="Frontend" />
   <img src="https://img.shields.io/badge/FastAPI-00A98F?style=flat-square&logo=fastapi&logoColor=white&label=Backend&labelColor=444444" alt="Backend" />
