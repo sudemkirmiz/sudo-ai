@@ -12,12 +12,12 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License" />
 </p>
 
+**Sudo AI**, günlük **Google Workspace** işlerinizi (Gmail, Takvim, Drive, Docs, Sheets, Slides) doğal dille yönetmenizi sağlayan yüksek yetenekli, *ReAct (Reasoning and Acting)* mantığıyla çalışan premium bir yapay zeka asistanıdır. Google'ın bulut yapay zeka servisleri ile sistem araçlarını entegre ederek tamamen size özel, otonom bir "SaaS" (Hizmet olarak Yazılım) deneyimi sunar.
+
 <div align="center">
   <img src="frontend/public/screenshot.png" alt="Sudo AI Premium Dashboard" width="800"/>
 </div>
 
-
-**Sudo AI**, günlük **Google Workspace** işlerinizi (Gmail, Takvim, Drive, Docs, Sheets, Slides) doğal dille yönetmenizi sağlayan yüksek yetenekli, *ReAct (Reasoning and Acting)* mantığıyla çalışan premium bir yapay zeka asistanıdır. Google'ın bulut yapay zeka servisleri ile sistem araçlarını entegre ederek tamamen size özel, otonom bir "SaaS" (Hizmet olarak Yazılım) deneyimi sunar.
 
 ---
 
